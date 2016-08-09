@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E8DC82811AB7306C000BB585"
-               BuildableName = "PeerKit.framework"
-               BlueprintName = "PeerKit-OSX"
-               ReferencedContainer = "container:PeerKit.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E86EC4511AB73597001A7734"
-               BuildableName = "PeerKit-OSX-Tests.xctest"
-               BlueprintName = "PeerKit-OSX-Tests"
+               BlueprintIdentifier = "52475CDE1D5A6A520092BF13"
+               BuildableName = "PeerKit-tvOS.framework"
+               BlueprintName = "PeerKit-tvOS"
                ReferencedContainer = "container:PeerKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E86EC4511AB73597001A7734"
-               BuildableName = "PeerKit-OSX-Tests.xctest"
-               BlueprintName = "PeerKit-OSX-Tests"
+               BlueprintIdentifier = "52475CE61D5A6A530092BF13"
+               BuildableName = "PeerKit-tvOS-Tests.xctest"
+               BlueprintName = "PeerKit-tvOS-Tests"
                ReferencedContainer = "container:PeerKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E8DC82811AB7306C000BB585"
-            BuildableName = "PeerKit.framework"
-            BlueprintName = "PeerKit-OSX"
+            BlueprintIdentifier = "52475CDE1D5A6A520092BF13"
+            BuildableName = "PeerKit-tvOS.framework"
+            BlueprintName = "PeerKit-tvOS"
             ReferencedContainer = "container:PeerKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E8DC82811AB7306C000BB585"
-            BuildableName = "PeerKit.framework"
-            BlueprintName = "PeerKit-OSX"
+            BlueprintIdentifier = "52475CDE1D5A6A520092BF13"
+            BuildableName = "PeerKit-tvOS.framework"
+            BlueprintName = "PeerKit-tvOS"
             ReferencedContainer = "container:PeerKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -96,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E8DC82811AB7306C000BB585"
-            BuildableName = "PeerKit.framework"
-            BlueprintName = "PeerKit-OSX"
+            BlueprintIdentifier = "52475CDE1D5A6A520092BF13"
+            BuildableName = "PeerKit-tvOS.framework"
+            BlueprintName = "PeerKit-tvOS"
             ReferencedContainer = "container:PeerKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

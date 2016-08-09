@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52475CE81D5A6A530092BF13 /* PeerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52475CDF1D5A6A520092BF13 /* PeerKit.framework */; };
+		52475CED1D5A6A530092BF13 /* PeerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52475CEC1D5A6A530092BF13 /* PeerKitTests.swift */; };
+		52475CEF1D5A6A530092BF13 /* PeerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 52475CE11D5A6A530092BF13 /* PeerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E86EC4481AB734F5001A7734 /* PeerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89FD6C01A0C3CDC00C2FEF7 /* PeerKit.framework */; };
 		E86EC4581AB73597001A7734 /* PeerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8DC82821AB7306C000BB585 /* PeerKit.framework */; };
 		E86EC45E1AB735A1001A7734 /* PeerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89FD6D21A0C3CDC00C2FEF7 /* PeerKitTests.swift */; };
@@ -26,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		52475CE91D5A6A530092BF13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E89FD6B71A0C3CDC00C2FEF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52475CDE1D5A6A520092BF13;
+			remoteInfo = PeerKit;
+		};
 		E86EC4491AB734F5001A7734 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E89FD6B71A0C3CDC00C2FEF7 /* Project object */;
@@ -43,6 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52475CD41D5A68F10092BF13 /* PeerKit-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeerKit-tvOS.h"; sourceTree = "<group>"; };
+		52475CD51D5A68F10092BF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52475CDF1D5A6A520092BF13 /* PeerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PeerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52475CE11D5A6A530092BF13 /* PeerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeerKit.h; sourceTree = "<group>"; };
+		52475CE21D5A6A530092BF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52475CE71D5A6A530092BF13 /* PeerKit-tvOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PeerKit-tvOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52475CEC1D5A6A530092BF13 /* PeerKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerKitTests.swift; sourceTree = "<group>"; };
+		52475CEE1D5A6A530092BF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E86EC4421AB734F5001A7734 /* PeerKit-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PeerKit-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86EC4521AB73597001A7734 /* PeerKit-OSX-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PeerKit-OSX-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89FD6C01A0C3CDC00C2FEF7 /* PeerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PeerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +77,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		52475CDB1D5A6A520092BF13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52475CE41D5A6A530092BF13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52475CE81D5A6A530092BF13 /* PeerKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E86EC43F1AB734F5001A7734 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,11 +125,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52475CD31D5A68F10092BF13 /* PeerKit-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				52475CD41D5A68F10092BF13 /* PeerKit-tvOS.h */,
+				52475CD51D5A68F10092BF13 /* Info.plist */,
+			);
+			path = "PeerKit-tvOS";
+			sourceTree = "<group>";
+		};
+		52475CE01D5A6A530092BF13 /* PeerKit */ = {
+			isa = PBXGroup;
+			children = (
+				52475CE11D5A6A530092BF13 /* PeerKit.h */,
+				52475CE21D5A6A530092BF13 /* Info.plist */,
+			);
+			path = PeerKit;
+			sourceTree = "<group>";
+		};
+		52475CEB1D5A6A530092BF13 /* PeerKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				52475CEC1D5A6A530092BF13 /* PeerKitTests.swift */,
+				52475CEE1D5A6A530092BF13 /* Info.plist */,
+			);
+			path = PeerKitTests;
+			sourceTree = "<group>";
+		};
 		E89FD6B61A0C3CDC00C2FEF7 = {
 			isa = PBXGroup;
 			children = (
 				E89FD6C21A0C3CDC00C2FEF7 /* PeerKit */,
 				E89FD6CF1A0C3CDC00C2FEF7 /* PeerKitTests */,
+				52475CD31D5A68F10092BF13 /* PeerKit-tvOS */,
+				52475CE01D5A6A530092BF13 /* PeerKit */,
+				52475CEB1D5A6A530092BF13 /* PeerKitTests */,
 				E89FD6C11A0C3CDC00C2FEF7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +171,8 @@
 				E8DC82821AB7306C000BB585 /* PeerKit.framework */,
 				E86EC4421AB734F5001A7734 /* PeerKit-iOS-Tests.xctest */,
 				E86EC4521AB73597001A7734 /* PeerKit-OSX-Tests.xctest */,
+				52475CDF1D5A6A520092BF13 /* PeerKit.framework */,
+				52475CE71D5A6A530092BF13 /* PeerKit-tvOS-Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +219,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		52475CDC1D5A6A520092BF13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52475CEF1D5A6A530092BF13 /* PeerKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E89FD6BD1A0C3CDC00C2FEF7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +246,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		52475CDE1D5A6A520092BF13 /* PeerKit-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52475CF01D5A6A530092BF13 /* Build configuration list for PBXNativeTarget "PeerKit-tvOS" */;
+			buildPhases = (
+				52475CDA1D5A6A520092BF13 /* Sources */,
+				52475CDB1D5A6A520092BF13 /* Frameworks */,
+				52475CDC1D5A6A520092BF13 /* Headers */,
+				52475CDD1D5A6A520092BF13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PeerKit-tvOS";
+			productName = PeerKit;
+			productReference = 52475CDF1D5A6A520092BF13 /* PeerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52475CE61D5A6A530092BF13 /* PeerKit-tvOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52475CF31D5A6A530092BF13 /* Build configuration list for PBXNativeTarget "PeerKit-tvOS-Tests" */;
+			buildPhases = (
+				52475CE31D5A6A530092BF13 /* Sources */,
+				52475CE41D5A6A530092BF13 /* Frameworks */,
+				52475CE51D5A6A530092BF13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52475CEA1D5A6A530092BF13 /* PBXTargetDependency */,
+			);
+			name = "PeerKit-tvOS-Tests";
+			productName = PeerKitTests;
+			productReference = 52475CE71D5A6A530092BF13 /* PeerKit-tvOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E86EC4411AB734F5001A7734 /* PeerKit-iOS-Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E86EC44B1AB734F5001A7734 /* Build configuration list for PBXNativeTarget "PeerKit-iOS-Tests" */;
@@ -252,18 +361,28 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "JP Simard";
 				TargetAttributes = {
+					52475CDE1D5A6A520092BF13 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					52475CE61D5A6A530092BF13 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					E86EC4411AB734F5001A7734 = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0800;
 					};
 					E86EC4511AB73597001A7734 = {
 						CreatedOnToolsVersion = 6.3;
 					};
 					E89FD6BF1A0C3CDC00C2FEF7 = {
 						CreatedOnToolsVersion = 6.1;
+						LastSwiftMigration = 0800;
 					};
 					E8DC82811AB7306C000BB585 = {
 						CreatedOnToolsVersion = 6.3;
@@ -286,11 +405,27 @@
 				E86EC4411AB734F5001A7734 /* PeerKit-iOS-Tests */,
 				E8DC82811AB7306C000BB585 /* PeerKit-OSX */,
 				E86EC4511AB73597001A7734 /* PeerKit-OSX-Tests */,
+				52475CDE1D5A6A520092BF13 /* PeerKit-tvOS */,
+				52475CE61D5A6A530092BF13 /* PeerKit-tvOS-Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		52475CDD1D5A6A520092BF13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52475CE51D5A6A530092BF13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E86EC4401AB734F5001A7734 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +457,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		52475CDA1D5A6A520092BF13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52475CE31D5A6A530092BF13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52475CED1D5A6A530092BF13 /* PeerKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E86EC43E1AB734F5001A7734 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -365,6 +515,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		52475CEA1D5A6A530092BF13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52475CDE1D5A6A520092BF13 /* PeerKit-tvOS */;
+			targetProxy = 52475CE91D5A6A530092BF13 /* PBXContainerItemProxy */;
+		};
 		E86EC44A1AB734F5001A7734 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E89FD6BF1A0C3CDC00C2FEF7 /* PeerKit-iOS */;
@@ -378,14 +533,105 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		52475CF11D5A6A530092BF13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PeerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpsim.PeerKit;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
+				PRODUCT_NAME = PeerKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		52475CF21D5A6A530092BF13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PeerKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpsim.PeerKit;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
+				PRODUCT_NAME = PeerKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		52475CF41D5A6A530092BF13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = PeerKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpsim.PeerKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		52475CF51D5A6A530092BF13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = PeerKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpsim.PeerKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		E86EC44C1AB734F5001A7734 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -396,6 +642,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jpsim.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -404,16 +651,15 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = PeerKitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jpsim.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -457,6 +703,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jpsim.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -473,8 +720,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -484,6 +733,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -520,8 +770,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -530,6 +782,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -551,6 +804,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -562,6 +816,7 @@
 				PRODUCT_NAME = PeerKit;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -570,6 +825,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -580,6 +836,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jpsim.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PeerKit;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -631,12 +889,29 @@
 				PRODUCT_NAME = PeerKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		52475CF01D5A6A530092BF13 /* Build configuration list for PBXNativeTarget "PeerKit-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52475CF11D5A6A530092BF13 /* Debug */,
+				52475CF21D5A6A530092BF13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52475CF31D5A6A530092BF13 /* Build configuration list for PBXNativeTarget "PeerKit-tvOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52475CF41D5A6A530092BF13 /* Debug */,
+				52475CF51D5A6A530092BF13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E86EC44B1AB734F5001A7734 /* Build configuration list for PBXNativeTarget "PeerKit-iOS-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

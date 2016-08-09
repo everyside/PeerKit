@@ -14,7 +14,7 @@ import MultipeerConnectivity
 public typealias PeerBlock = ((myPeerID: MCPeerID, peerID: MCPeerID) -> Void)
 public typealias EventBlock = ((peerID: MCPeerID, event: String, object: AnyObject?) -> Void)
 public typealias ObjectBlock = ((peerID: MCPeerID, object: AnyObject?) -> Void)
-public typealias ResourceBlock = ((myPeerID: MCPeerID, resourceName: String, peer: MCPeerID, localURL: NSURL) -> Void)
+public typealias ResourceBlock = ((myPeerID: MCPeerID, resourceName: String, peer: MCPeerID, localURL: URL) -> Void)
 
 // MARK: Event Blocks
 
@@ -30,7 +30,7 @@ public var eventBlocks = [String: ObjectBlock]()
 
 #if os(iOS)
 import UIKit
-public let myName = UIDevice.currentDevice().name
+public let myName = UIDevice.current.name
 #else
 public let myName = NSHost.currentHost().localizedName ?? ""
 #endif
@@ -42,7 +42,7 @@ public var session: MCSession?
 
 func didConnecting(myPeerID: MCPeerID, peer: MCPeerID) {
     if let onConnecting = onConnecting {
-        dispatch_async(dispatch_get_main_queue()) {
+        DispatchQueue.main.async {
             onConnecting(myPeerID: myPeerID, peerID: peer)
         }
     }
@@ -53,7 +53,7 @@ func didConnect(myPeerID: MCPeerID, peer: MCPeerID) {
         session = transceiver.session.mcSession
     }
     if let onConnect = onConnect {
-        dispatch_async(dispatch_get_main_queue()) {
+        DispatchQueue.main.async {
             onConnect(myPeerID: myPeerID, peerID: peer)
         }
     }
@@ -61,17 +61,17 @@ func didConnect(myPeerID: MCPeerID, peer: MCPeerID) {
 
 func didDisconnect(myPeerID: MCPeerID, peer: MCPeerID) {
     if let onDisconnect = onDisconnect {
-        dispatch_async(dispatch_get_main_queue()) {
+        DispatchQueue.main.async {
             onDisconnect(myPeerID: myPeerID, peerID: peer)
         }
     }
 }
 
-func didReceiveData(data: NSData, fromPeer peer: MCPeerID) {
-    if let dict = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [String: AnyObject],
+func didReceiveData(_ data: Data, fromPeer peer: MCPeerID) {
+    if let dict = NSKeyedUnarchiver.unarchiveObject(with: data) as? [String: AnyObject],
         let event = dict["event"] as? String,
         let object: AnyObject? = dict["object"] {
-            dispatch_async(dispatch_get_main_queue()) {
+            DispatchQueue.main.async {
                 if let onEvent = onEvent {
                     onEvent(peerID: peer, event: event, object: object)
                 }
@@ -82,9 +82,9 @@ func didReceiveData(data: NSData, fromPeer peer: MCPeerID) {
     }
 }
 
-func didFinishReceivingResource(myPeerID: MCPeerID, resourceName: String, fromPeer peer: MCPeerID, atURL localURL: NSURL) {
+func didFinishReceivingResource(myPeerID: MCPeerID, resourceName: String, fromPeer peer: MCPeerID, atURL localURL: URL) {
     if let onFinishReceivingResource = onFinishReceivingResource {
-        dispatch_async(dispatch_get_main_queue()) {
+        DispatchQueue.main.async {
             onFinishReceivingResource(myPeerID: myPeerID, resourceName: resourceName, peer: peer, localURL: localURL)
         }
     }
@@ -111,8 +111,8 @@ public func stopTransceiving() {
 
 // MARK: Events
 
-public func sendEvent(event: String, object: AnyObject? = nil, toPeers peers: [MCPeerID]? = session?.connectedPeers) {
-    guard let peers = peers where !peers.isEmpty else {
+public func sendEvent(_ event: String, object: AnyObject? = nil, toPeers peers: [MCPeerID]? = session?.connectedPeers) {
+    guard let peers = peers, !peers.isEmpty else {
         return
     }
 
@@ -122,22 +122,22 @@ public func sendEvent(event: String, object: AnyObject? = nil, toPeers peers: [M
         rootObject["object"] = object
     }
 
-    let data = NSKeyedArchiver.archivedDataWithRootObject(rootObject)
+    let data = NSKeyedArchiver.archivedData(withRootObject: rootObject)
 
     do {
-        try session?.sendData(data, toPeers: peers, withMode: .Reliable)
+        try session?.send(data, toPeers: peers, with: .reliable)
     } catch _ {
     }
 }
 
-public func sendResourceAtURL(resourceURL: NSURL,
+public func sendResourceAtURL(_ resourceURL: URL,
                    withName resourceName: String,
   toPeers peers: [MCPeerID]? = session?.connectedPeers,
-  withCompletionHandler completionHandler: ((NSError?) -> Void)?) -> [NSProgress?]? {
+  withCompletionHandler completionHandler: ((Error?) -> Void)?) -> [Progress?]? {
 
     if let session = session {
         return peers?.map { peerID in
-            return session.sendResourceAtURL(resourceURL, withName: resourceName, toPeer: peerID, withCompletionHandler: completionHandler)
+            return session.sendResource(at: resourceURL, withName: resourceName, toPeer: peerID, withCompletionHandler: completionHandler)
         }
     }
     return nil
