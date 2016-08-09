@@ -53,8 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		52475CD41D5A68F10092BF13 /* PeerKit-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PeerKit-tvOS.h"; sourceTree = "<group>"; };
-		52475CD51D5A68F10092BF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52475CDF1D5A6A520092BF13 /* PeerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PeerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52475CE11D5A6A530092BF13 /* PeerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeerKit.h; sourceTree = "<group>"; };
 		52475CE21D5A6A530092BF13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,15 +123,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52475CD31D5A68F10092BF13 /* PeerKit-tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				52475CD41D5A68F10092BF13 /* PeerKit-tvOS.h */,
-				52475CD51D5A68F10092BF13 /* Info.plist */,
-			);
-			path = "PeerKit-tvOS";
-			sourceTree = "<group>";
-		};
 		52475CE01D5A6A530092BF13 /* PeerKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +146,6 @@
 			children = (
 				E89FD6C21A0C3CDC00C2FEF7 /* PeerKit */,
 				E89FD6CF1A0C3CDC00C2FEF7 /* PeerKitTests */,
-				52475CD31D5A68F10092BF13 /* PeerKit-tvOS */,
 				52475CE01D5A6A530092BF13 /* PeerKit */,
 				52475CEB1D5A6A530092BF13 /* PeerKitTests */,
 				E89FD6C11A0C3CDC00C2FEF7 /* Products */,
